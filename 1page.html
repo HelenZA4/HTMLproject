@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма поиска</title>
 </head>
 <body>
+<p><b>Поиск лучшего друга</b></p>
+<br/>
+<br/>
+<form action="/dog.php" method="post">
+    <label>
+        Ваше имя <input type="text" name="clientName" required/>
+    </label>
+</form>
+<br/>
+<br/>
+<p><b>Ваш опыт общения с собаками</b></p>
+<form action="/dog.php" method="post">
+    <label>
+        <select name="experienceDog">
+            <option value="Не было опыта">Не было опыта</option>
+            <option value="Общались с собакой друзей">Общались с собакой друзей</option>
+            <option value="Раньше была собака">Раньше была собака</option>
+            <option value="Сейчас живёт собака">Сейчас живет собака</option>
+        </select>
+    </label>
+</form>
+<br/>
+<br/>
+<p><b>Опишите собаку мечты</b></p>
+<form action="/dog.php" method="post">
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description"
+              rows="5" cols="40"></textarea>
+</form>
+<br/>
+<br/>
+<p><b>Порода собаки</b></p>
+<form action="/dog.php" method="post">
+    <label>
+        <select name="breedDog" multiple required>
+            <option disabled>Выберите породу</option>
+            <option value="Алабай">Алабай</option>
+            <option value="Лабрадор">Лабрадор</option>
+            <option value="Корги">Корги</option>
+            <option value="Чихуахуа">Чихуахуа</option>
+        </select>
+    </label>
+</form>
+<br/>
+<br/>
+<p><b>Пол собаки</b></p>
+<form action="/dog.php" method="post">
+    <label>Мужской
+        <input type="radio" value="Мужской" name="genderDog"></label>
+    <label>Женский
+        <input type="radio" value="Женский" name="genderDog"></label>
+</form>
+<br/>
+<br/>
+<p><b>Условия проживания собаки</b></p>
+<form action="/dog.php" method="post">
+    <label>Квартира
+        <input type="checkbox" value="Квартира" name="placeDog"></label>
+    <label>Частный дом
+        <input type="checkbox" value="Частный дом" name="placeDog"></label>
+</form>
+<br/>
+<br/>
+<form action="/dog.php" method="post">
+    <button type="submit">Отправить заявку</button>
+</form>
 
 </body>
 </html>
