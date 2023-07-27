@@ -6,18 +6,16 @@
     <title>Форма поиска</title>
 </head>
 <body>
-<p id="bestDog" align="center"><b>Поиск лучшего друга</b></p>
-<br/>
-<br/>
 <form action="/dog.php" method="post">
+    <p id="bestDog" align="center"><b>Поиск лучшего друга</b></p>
+    <br/>
+    <br/>
     <label>
         Ваше имя <input type="text" name="clientName" required/>
     </label>
-</form>
-<br/>
-<br/>
-<p id="experienceDog"><b>Ваш опыт общения с собаками</b></p>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
+    <p id="experienceDog"><b>Ваш опыт общения с собаками</b></p>
     <label>
         <select name="experienceDog">
             <option value="Не было опыта">Не было опыта</option>
@@ -26,19 +24,15 @@
             <option value="Сейчас живёт собака">Сейчас живет собака</option>
         </select>
     </label>
-</form>
-<br/>
-<br/>
-<p id="dreamDog"><b>Опишите собаку мечты</b></p>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
+    <p id="dreamDog"><b>Опишите собаку мечты</b></p>
     <label for="description">Описание:</label>
     <textarea id="description" name="description"
               rows="5" cols="40"></textarea>
-</form>
-<br/>
-<br/>
-<p id="breedDog"><b>Порода собаки</b></p>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
+    <p id="breedDog"><b>Порода собаки</b></p>
     <label>
         <select name="breedDog" multiple required>
             <option disabled>Выберите породу</option>
@@ -48,28 +42,22 @@
             <option value="Чихуахуа">Чихуахуа</option>
         </select>
     </label>
-</form>
-<br/>
-<br/>
-<p id="genderDog"><b>Пол собаки</b></p>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
+    <p id="genderDog"><b>Пол собаки</b></p>
     <label>Мужской
         <input type="radio" value="Мужской" name="genderDog"></label>
     <label>Женский
         <input type="radio" value="Женский" name="genderDog"></label>
-</form>
-<br/>
-<br/>
-<p id="placeDog"><b>Условия проживания собаки</b></p>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
+    <p id="placeDog"><b>Условия проживания собаки</b></p>
     <label>Квартира
         <input type="checkbox" value="Квартира" name="placeDog"></label>
     <label>Частный дом
         <input type="checkbox" value="Частный дом" name="placeDog"></label>
-</form>
-<br/>
-<br/>
-<form action="/dog.php" method="post">
+    <br/>
+    <br/>
     <button type="submit">Отправить заявку</button>
 </form>
 <br/>
