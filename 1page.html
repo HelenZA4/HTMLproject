@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
     <title>Форма поиска</title>
 </head>
 <body>
-<p><b>Поиск лучшего друга</b></p>
+<p id="bestDog" align="center"><b>Поиск лучшего друга</b></p>
 <br/>
 <br/>
 <form action="/dog.php" method="post">
@@ -15,7 +16,7 @@
 </form>
 <br/>
 <br/>
-<p><b>Ваш опыт общения с собаками</b></p>
+<p id="experienceDog"><b>Ваш опыт общения с собаками</b></p>
 <form action="/dog.php" method="post">
     <label>
         <select name="experienceDog">
@@ -28,7 +29,7 @@
 </form>
 <br/>
 <br/>
-<p><b>Опишите собаку мечты</b></p>
+<p id="dreamDog"><b>Опишите собаку мечты</b></p>
 <form action="/dog.php" method="post">
     <label for="description">Описание:</label>
     <textarea id="description" name="description"
@@ -36,7 +37,7 @@
 </form>
 <br/>
 <br/>
-<p><b>Порода собаки</b></p>
+<p id="breedDog"><b>Порода собаки</b></p>
 <form action="/dog.php" method="post">
     <label>
         <select name="breedDog" multiple required>
@@ -50,7 +51,7 @@
 </form>
 <br/>
 <br/>
-<p><b>Пол собаки</b></p>
+<p id="genderDog"><b>Пол собаки</b></p>
 <form action="/dog.php" method="post">
     <label>Мужской
         <input type="radio" value="Мужской" name="genderDog"></label>
@@ -59,7 +60,7 @@
 </form>
 <br/>
 <br/>
-<p><b>Условия проживания собаки</b></p>
+<p id="placeDog"><b>Условия проживания собаки</b></p>
 <form action="/dog.php" method="post">
     <label>Квартира
         <input type="checkbox" value="Квартира" name="placeDog"></label>
@@ -71,6 +72,9 @@
 <form action="/dog.php" method="post">
     <button type="submit">Отправить заявку</button>
 </form>
-
+<br/>
+<br/>
+<a href="./index.html">Вернуться на главную страницу</a>
+<br/>
 </body>
 </html>
