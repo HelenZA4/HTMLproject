@@ -3,73 +3,87 @@ body
     font-size: 16px;
     background-color: #D4E6B3;
 }
+
 h1
 {
     color: brown;
     font-size: 22px;
     text-shadow: 4px 4px 0 #cccccc;
 }
+
 h2
 {
     color: blue;
     font-size: 22px;
     text-shadow: 4px 4px 0 #cccccc;
 }
+
 h3
 {
     color: brown;
     font-size: 22px;
     text-shadow: 4px 4px 0 #cccccc;
 }
+
 .header
 {
     color: brown;
     font-size: 24px;
     font-weight: bold;
  }
+
 #bestDog
 {
     color: brown;
     font-size: 22px;
     text-shadow: 4px 4px 0 #cccccc;
 }
+
 #experienceDog
 {
     color: orange;
     font-size: 20px;
 }
+
 #dreamDog
 {
     color: coral;
     font-size: 20px;
 }
+
 #breedDog
 {
     color: green;
     font-size: 20px;
 }
+
 #genderDog
 {
     color: blue;
     font-size: 20px;
 }
+
 #placeDog
 {
     color: purple;
     font-size: 20px;
 }
+
 a.link
 {
     color: red;
 }
+
 a.visited
 {
     color: purple;
 }
+
 div:hover
 {
     background: #e3e3e3;
 }
+
 p
 {
     color: purple;
